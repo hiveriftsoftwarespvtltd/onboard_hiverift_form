@@ -49,6 +49,8 @@ export class FormSubmission extends Document {
   @Prop() section3_contentWriter: string;
   @Prop() section3_imageProvider: string;
   @Prop() section3_logoStatus: string;
+  @Prop({ type: Object }) section3_logoFile: Record<string, any>;
+  @Prop({ type: Object }) section3_brandGuideFile: Record<string, any>;
   @Prop() section3_brandColors: string;
   @Prop() section3_fontsPreferred: string;
   @Prop() section3_expectedLaunch: string;
@@ -280,6 +282,7 @@ export class FormSubmission extends Document {
   @Prop() section12_clientName: string;
   @Prop() section12_clientDesignation: string;
   @Prop() section12_signDate: string;
+  @Prop({ type: Object }) section12_clientSignatureFile: Record<string, any>;
   @Prop() section12_clientSignatureCanvas: string;
   @Prop() section12_companyStampFile: string;
   @Prop() section12_agencyName: string;

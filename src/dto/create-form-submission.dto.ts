@@ -45,6 +45,8 @@ export class CreateFormSubmissionDto {
   section3_contentWriter?: string;
   section3_imageProvider?: string;
   section3_logoStatus?: string;
+  section3_logoFile?: any;
+  section3_brandGuideFile?: any;
   section3_brandColors?: string;
   section3_fontsPreferred?: string;
   section3_expectedLaunch?: string;
@@ -276,6 +278,7 @@ export class CreateFormSubmissionDto {
   section12_clientName?: string;
   section12_clientDesignation?: string;
   section12_signDate?: string;
+  section12_clientSignatureFile?: any;
   section12_clientSignatureCanvas?: string;
   section12_companyStampFile?: string;
   section12_agencyName?: string;
